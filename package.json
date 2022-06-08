@@ -1,0 +1,31 @@
+{
+  "name": "demo_pb_46",
+  "description": "Elegir uno de los frameworks vistos en clase y trasladar a esta nueva plataforma el último proyecto entregable (con GraphQL) o al anterior (sin GraphQL).",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "koa": "^2.13.4",
+    "koa-body": "^5.0.0",
+    "koa-router": "^10.1.1",
+    "mongoose": "^6.3.6",
+    "uuid": "^8.3.2",
+    "winston": "^3.7.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gsurcu/Coder-Koa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gsurcu/Coder-Koa/issues"
+  },
+  "homepage": "https://github.com/gsurcu/Coder-Koa#readme",
+  "devDependencies": {
+    "dotenv": "^16.0.1"
+  }
+}
