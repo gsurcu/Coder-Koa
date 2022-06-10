@@ -20,7 +20,12 @@ class FileContainer {
   async open(){
     try {
       if (fs.existsSync(this.fileName)) {
-        return JSON.parse(fs.readFileSync(this.fileName,'utf-8'));
+        const doc = fs.readFileSync(this.fileName,'utf-8');
+        if(!doc) {
+          return await this.createItem([]);
+        }
+        const docJson = JSON.parse(doc)
+        return docJson
       } else {
         await this.createItem([]);
       }

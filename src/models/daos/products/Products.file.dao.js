@@ -1,7 +1,7 @@
 const { v4: uuidv4 } = require("uuid")
 const { errorLog } = require("../../../middlewares/logger");
 const FileContainer = require("../../containers/File.container");
-const productsDto = require("../../dtos/Products.dto");
+// const productsDto = require("../../dtos/Products.dto");
 
 class ProductsFileDao extends FileContainer {
   static instance;
@@ -24,9 +24,11 @@ class ProductsFileDao extends FileContainer {
 
   async saveItem(item) {
     try {
-      const items = await this.getAll()
-      items.push(productsDto(item, uuidv4(), Date.now()))
-      return await this.createItem(items)
+      const items = await this.getAll();
+      const newItem = {...item, _id: uuidv4(), timeStamp: Date.now()};
+      items.push(newItem);
+      await this.createItem(items);
+      return newItem
     } catch (error) {
       errorLog(error.message)
     }
@@ -53,7 +55,7 @@ class ProductsFileDao extends FileContainer {
     } catch (error) {
       errorLog(error.message)
     }
-  }
+  } 
 
   async delItem(id) {
     try {

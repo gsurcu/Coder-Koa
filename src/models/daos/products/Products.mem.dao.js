@@ -1,7 +1,6 @@
 const { v4: uuidv4 } = require("uuid")
 const { errorLog } = require("../../../middlewares/logger")
 const MemoryContainer = require("../../containers/Memory.container")
-const productsDto = require("../../dtos/Products.dto")
 
 class ProductsMemDao extends MemoryContainer {
   static instance
@@ -24,7 +23,7 @@ class ProductsMemDao extends MemoryContainer {
 
   async saveItem(item) {
     try {
-      const newItem = productsDto(item, uuidv4(), Date.now())
+      const newItem = {...item, _id: uuidv4(), timeStamp: Date.now()}
       return await this.createItem(newItem)
     } catch (error) {
       errorLog(error.message)

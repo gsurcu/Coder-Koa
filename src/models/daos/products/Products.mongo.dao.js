@@ -1,6 +1,6 @@
 const { errorLog } = require('../../../middlewares/logger');
 const MongoDBContainer = require('../../containers/Mongodb.container');
-const ProductsSchema = require('../../schemas/Product.schema');
+const ProductsSchema = require('../../schemas/mongo/Product.schema');
 
 class ProductsMongoDao extends MongoDBContainer {
   static instance;

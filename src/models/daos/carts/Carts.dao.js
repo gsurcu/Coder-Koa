@@ -1,6 +1,6 @@
-const { errorLog } = require('../../middlewares/logger');
-const MongoDBContainer = require('../containers/Mongodb.container');
-const CarritoSchema = require('../schemas/Cart.schema');
+const { errorLog } = require('../../../middlewares/logger');
+const MongoDBContainer = require('../../containers/Mongodb.container');
+const CarritoSchema = require('../../schemas/mongo/Cart.schema');
 // const ProductsDao = require('./products/Products.mongo.dao');
 
 class CarritosDao extends MongoDBContainer {

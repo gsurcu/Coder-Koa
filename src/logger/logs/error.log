@@ -1,0 +1,32 @@
+{"level":"error","message":"{\"error\":\"[INTERNAL ERROR]\",\"message\":\"Unexpected end of JSON input\"}","timestamp":"2022-06-10T19:34:45.575Z"}
+{"level":"error","message":"{\"error\":\"[INTERNAL ERROR]\",\"message\":\"Unexpected end of JSON input\"}","timestamp":"2022-06-10T19:43:48.026Z"}
+{"level":"error","message":"{\"error\":\"[INTERNAL ERROR]\",\"message\":\"Callback must be a function. Received undefined\"}","timestamp":"2022-06-10T19:44:45.962Z"}
+{"level":"error","message":"{\"error\":\"[INTERNAL ERROR]\",\"message\":\"Callback must be a function. Received undefined\"}","timestamp":"2022-06-10T19:45:10.886Z"}
+{"level":"error","message":"{\"error\":\"[INTERNAL ERROR]\",\"message\":\"Callback must be a function. Received undefined\"}","timestamp":"2022-06-10T19:45:31.546Z"}
+{"level":"error","message":"{\"error\":\"[INTERNAL ERROR]\",\"message\":\"Callback must be a function. Received undefined\"}","timestamp":"2022-06-10T19:45:51.612Z"}
+{"level":"error","message":"{\"error\":\"[INTERNAL ERROR]\",\"message\":\"EISDIR: illegal operation on a directory, open 'C:\\\\Users\\\\Public\\\\Documents\\\\Backend-25350\\\\demo_pb_46\\\\products.json'\"}","timestamp":"2022-06-10T19:48:23.930Z"}
+{"level":"error","message":"{\"error\":\"[INTERNAL ERROR]\",\"message\":\"EISDIR: illegal operation on a directory, read\"}","timestamp":"2022-06-10T19:48:25.046Z"}
+{"level":"error","message":"{\"error\":\"[INTERNAL ERROR]\",\"message\":\"EISDIR: illegal operation on a directory, read\"}","timestamp":"2022-06-10T19:51:53.511Z"}
+{"level":"error","message":"{\"error\":\"[INTERNAL ERROR]\",\"message\":\"EISDIR: illegal operation on a directory, read\"}","timestamp":"2022-06-10T19:53:51.632Z"}
+{"level":"error","message":"{\"error\":\"[INTERNAL ERROR]\",\"message\":\"EISDIR: illegal operation on a directory, read\"}","timestamp":"2022-06-10T20:22:38.162Z"}
+{"level":"error","message":"{\"error\":\"[INTERNAL ERROR]\",\"message\":\"EISDIR: illegal operation on a directory, read\"}","timestamp":"2022-06-10T20:23:40.346Z"}
+{"level":"error","message":"{\"error\":\"[INTERNAL ERROR]\",\"message\":\"EISDIR: illegal operation on a directory, read\"}","timestamp":"2022-06-10T20:25:44.752Z"}
+{"level":"error","message":"{\"error\":\"[INTERNAL ERROR]\",\"message\":\"EISDIR: illegal operation on a directory, read\"}","timestamp":"2022-06-10T20:26:25.459Z"}
+{"level":"error","message":"{\"error\":\"[INTERNAL ERROR]\",\"message\":\"EISDIR: illegal operation on a directory, read\"}","timestamp":"2022-06-10T20:26:33.566Z"}
+{"level":"error","message":"{\"error\":\"[INTERNAL ERROR]\",\"message\":\"EISDIR: illegal operation on a directory, read\"}","timestamp":"2022-06-10T20:26:36.634Z"}
+{"level":"error","message":"{\"error\":\"[INTERNAL ERROR]\",\"message\":\"EISDIR: illegal operation on a directory, read\"}","timestamp":"2022-06-10T20:26:39.871Z"}
+{"level":"error","message":"{\"error\":\"[INTERNAL ERROR]\",\"message\":\"EISDIR: illegal operation on a directory, read\"}","timestamp":"2022-06-10T20:39:23.687Z"}
+{"level":"error","message":"{\"error\":\"[INTERNAL ERROR]\",\"message\":\"EISDIR: illegal operation on a directory, read\"}","timestamp":"2022-06-10T20:43:58.501Z"}
+{"level":"error","message":"{\"error\":\"[INTERNAL ERROR]\",\"message\":\"EISDIR: illegal operation on a directory, read\"}","timestamp":"2022-06-10T20:44:55.740Z"}
+{"level":"error","message":"{\"error\":\"[INTERNAL ERROR]\",\"message\":\"EISDIR: illegal operation on a directory, read\"}","timestamp":"2022-06-10T20:48:46.750Z"}
+{"level":"error","message":"{\"error\":\"[INTERNAL ERROR]\",\"message\":\"EISDIR: illegal operation on a directory, read\"}","timestamp":"2022-06-10T20:49:17.861Z"}
+{"level":"error","message":"{\"error\":\"[INTERNAL ERROR]\",\"message\":\"EISDIR: illegal operation on a directory, read\"}","timestamp":"2022-06-10T20:49:49.618Z"}
+{"level":"error","message":"{\"error\":\"[INTERNAL ERROR]\",\"message\":\"EISDIR: illegal operation on a directory, read\"}","timestamp":"2022-06-10T20:50:22.893Z"}
+{"level":"error","message":"{\"error\":\"[INTERNAL ERROR]\",\"message\":\"EISDIR: illegal operation on a directory, read\"}","timestamp":"2022-06-10T20:50:42.024Z"}
+{"level":"error","message":"{\"error\":\"[INTERNAL ERROR]\",\"message\":\"EISDIR: illegal operation on a directory, read\"}","timestamp":"2022-06-10T20:51:11.619Z"}
+{"level":"error","message":"{\"error\":\"[INTERNAL ERROR]\",\"message\":\"EISDIR: illegal operation on a directory, read\"}","timestamp":"2022-06-10T20:51:52.218Z"}
+{"level":"error","message":"{\"error\":\"[INTERNAL ERROR]\",\"message\":\"The \\\"data\\\" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined\"}","timestamp":"2022-06-10T20:57:11.082Z"}
+{"level":"error","message":"{\"error\":\"[INTERNAL ERROR]\",\"message\":\"The \\\"data\\\" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined\"}","timestamp":"2022-06-10T20:57:27.636Z"}
+{"level":"error","message":"{\"error\":\"[INTERNAL ERROR]\",\"message\":\"Unexpected end of JSON input\"}","timestamp":"2022-06-10T21:04:10.345Z"}
+{"level":"error","message":"{\"error\":\"[INTERNAL ERROR]\",\"message\":\"Unexpected end of JSON input\"}","timestamp":"2022-06-10T21:05:52.676Z"}
+{"level":"error","message":"{\"error\":\"[INTERNAL ERROR]\",\"message\":\"Unexpected end of JSON input\"}","timestamp":"2022-06-10T21:06:03.152Z"}

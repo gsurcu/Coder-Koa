@@ -1,10 +1,10 @@
-const CartsDao = require('../models/daos/Carts.dao');
-const ProductsDao = require('../models/daos/Products.factory.dao')
+const CartsDao = require('../models/daos/carts/Carts.dao');
+const ProductsRepository = require("../models/repository/Products.repository");
 
 class CartsController {
   constructor() {
     this.cartsDao = new CartsDao('ecommerce', 'carritos');
-    this.productsDao = ProductsDao.get();
+    this.productsDao = ProductsRepository;
   }
 
   createCart = async (req, res) => {

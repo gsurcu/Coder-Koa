@@ -2,7 +2,7 @@ const Router = require('koa-router');
 const ProductsRouter = require('./products/products.routes');
 const CartsRouter = require('./cart/cart.routes');
 const router = new Router({
-  prefix: '/'
+  prefix: '/api'
 });
 
 class ApiRouter {
@@ -12,9 +12,9 @@ class ApiRouter {
   }
   start() {
     //Routes
-    router.use('/products', this.productsRoutes.start());
-    router.use('/carrito', this.cartsRoutes.start());
-    return router;
+    router.use(this.productsRoutes.start());
+    router.use(this.cartsRoutes.start());
+    return router.routes();
   }
 }
 

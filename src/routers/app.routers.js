@@ -1,7 +1,7 @@
 const Router = require('koa-router');
 const ApiRouter = require('./api/api.routes');
 const { warnLog, infoLog } = require('../middlewares/logger');
-const graphql = require('./graphql/graphql.routes');
+// const graphql = require('./graphql/graphql.routes');
 
 const router = new Router({
   prefix: '/'
@@ -14,9 +14,9 @@ class Routes {
 
   start(){
     router.use(infoLog);
-    router.use('/api', this.apiRoutes.start());
-    router.use('/graphql', graphql)
-    router.use('/*', warnLog);
+    router.use(this.apiRoutes.start());
+    // router.use('/graphql', graphql)
+    // router.use('/*', warnLog);
     return router.routes();
   }
 }

@@ -47,7 +47,7 @@ class MemoryContainer {
     try {
       if (typeof resourceItem == 'object') {
         this.items.push(resourceItem)
-        return true
+        return resourceItem
       }
       return false;
     }

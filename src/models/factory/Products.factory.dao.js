@@ -1,6 +1,6 @@
-const ProductsFileDao = require("./products/Products.file.dao");
-const ProductsMemDao = require("./products/Products.mem.dao");
-const ProductsMongoDao = require("./products/Products.mongo.dao");
+const ProductsFileDao = require("../daos/products/Products.file.dao");
+const ProductsMemDao = require("../daos/products/Products.mem.dao");
+const ProductsMongoDao = require("../daos/products/Products.mongo.dao");
 
 class ProductsFactoryDao {
   static get(type) {

@@ -1,6 +1,8 @@
-const express = require('express')
+const Router = require('koa-router');
 const CartsController = require('../../../controllers/carts.controllers.js');
-const router = express.Router();
+const router = new Router({
+  prefix: '/cart'
+});
 
 class CartsRouter {
   constructor() {
@@ -14,7 +16,7 @@ class CartsRouter {
     router.post('/:id/productos/:id_prod', this.cartsController.addProd);
     router.delete('/:id/productos/:id_prod', this.cartsController.deleteProd);
 
-    return router
+    return router.routes()
   }
 }
 

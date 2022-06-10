@@ -1,17 +1,18 @@
-const ApiProducts = require("../api/products");
+const { errorLog } = require("../middlewares/logger");
+const ProductsRepository = require("../models/repository/Products.repository");
 
 class ProductsController {
   constructor() {
-    this.productsDao = ApiProducts
+    this.productsDao = ProductsRepository;
     
   }
 
   create = async (req, res) => {
     try {
-      const {title, price, imgUrl, code, description, stock} = req.body;
+      const product = req.body;
       
-      if (title && price && imgUrl && code && description && stock) {
-        const nuevoProducto =   await this.productsDao.saveProduct({title, price, imgUrl, code, description, stock });
+      if (product) {
+        const nuevoProducto =   await this.productsDao.createProduct(product);
         if (nuevoProducto) {
           return res.status(200).json(nuevoProducto);
         }
@@ -19,17 +20,21 @@ class ProductsController {
       }
       return res.status(400).send("Faltan datos");
     } catch (error) {
-      
+      errorLog(error.message)
     }
   };
 
   list = async (req, res) => {
     try {
       const { id } = req.params;
-      const producto = await this.productsDao.getProducts(id);
-      return res.status(200).json(producto);
+      if (id) {
+        const product = await this.productsDao.getProductById({id});
+        return res.status(200).json(product);
+      }
+      const products = await this.productsDao.getAllProducts({})
+      return res.status(200).json(products);
     } catch (error) {
-      
+      errorLog(error.message)
     }
   }
   
@@ -38,13 +43,13 @@ class ProductsController {
       const { id } = req.params;
       const item = req.body;
       
-      const productoActualizado = await this.productsDao.updateProduct( id, item );
+      const productoActualizado = await this.productsDao.updateProduct({ id, item });
       if (productoActualizado) {
         return res.status(200).json(productoActualizado);
       }
       return res.status(404).send("Producto no encontrado");      
     } catch (error) {
-      
+      errorLog(error.message)
     }
   };
 
@@ -58,7 +63,7 @@ class ProductsController {
       }
       return res.status(404).json({mensaje: "Producto no encontrado"});
     } catch (error) {
-      
+      errorLog(error.message)
     }
   };
 }
