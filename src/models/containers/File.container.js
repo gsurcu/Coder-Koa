@@ -24,8 +24,7 @@ class FileContainer {
         if(!doc) {
           return await this.createItem([]);
         }
-        const docJson = JSON.parse(doc)
-        return docJson
+        return JSON.parse(doc)
       } else {
         await this.createItem([]);
       }

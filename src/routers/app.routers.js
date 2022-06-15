@@ -13,10 +13,10 @@ class Routes {
   }
 
   start(){
-    router.use(infoLog);
+    // router.use(infoLog);
     router.use(this.apiRoutes.start());
     // router.use('/graphql', graphql)
-    // router.use('/*', warnLog);
+    // router.use(warnLog);
     return router.routes();
   }
 }

@@ -9,7 +9,7 @@ class ProductsRouter {
     this.productsController = new ProductsController()
   }
   start() {
-    router.get('/:id?', this.productsController.list);
+    router.get('/:id?', this.productsController.read);
     router.post('/', this.productsController.create);
     router.put('/:id', this.productsController.update);
     router.delete('/:id', this.productsController.delete);

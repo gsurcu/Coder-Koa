@@ -1,20 +1,21 @@
 const { infoLogger, warnLogger, errorLogger} = require('../logger/index')
 
-const infoLog = async (req, res, next) => {
+const infoLog = async (ctx, next) => {
   try {
-    infoLogger.log('info','',{metodo: req.method, ruta: req.originalUrl})
+    infoLogger.log('info','',{metodo: ctx.request.method, ruta: ctx.request.originalUrl})
   } catch (err) {
   }
   next()
 }
-const warnLog = async (req, res) => {
+const warnLog = async (ctx) => {
   try {
   } catch (err) {
-    warnLogger.log('warn','',{metodo: req.method, ruta: req.originalUrl})
-    res.status(404).json({
+    warnLogger.log('warn','',{metodo: ctx.request.method, ruta: ctx.request.originalUrl})
+    ctx.response.status = 404;
+    ctx.body = {
       error: -2,
-      descripcion: `La ruta ${req.baseUrl} con el metodo ${req.method} no esta implementado`,
-    });
+      descripcion: `La ruta ${ctx.request.url} con el metodo ${ctx.request.method} no esta implementado`,
+    };
   }
 }
 const errorLog = async (err) => {
