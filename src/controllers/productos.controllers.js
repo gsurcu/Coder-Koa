@@ -3,7 +3,7 @@ const ProductsRepository = require("../models/repository/Products.repository");
 
 class ProductsController {
   constructor() {
-    this.productsDao = ProductsRepository;    
+    // this.productsDao = ProductsRepository;    
   }
 
   async create(ctx) {
@@ -11,7 +11,7 @@ class ProductsController {
       const product = ctx.request?.body;
       
       if (product) {
-        const newProduct =   await this.productsDao.createProduct({product});
+        const newProduct =   await ProductsRepository.createProduct({product});
         if (newProduct) {
           ctx.response.status = 201;
           ctx.body = {
@@ -35,18 +35,18 @@ class ProductsController {
     }
   };
 
-  async read(ctx) {console.log('ok')
+  async read(ctx) {
     try {
-      const id = ctx.params?.id; //console.log('ok')
+      const id = ctx.params?.id; 
       if (id) {
-        const product = await this.productsDao.getProductById({id});
+        const product = await ProductsRepository.getProductById(id);
         ctx.response.status = 200;
         ctx.body = {
           message: product,
         }
         // return res.status(200).json(product);
       }
-      const products = await this.productsDao.getAllProducts({});
+      const products = await ProductsRepository.getAllProducts();
       ctx.response.status = 200;
       ctx.body = {
         message: products,
@@ -54,7 +54,10 @@ class ProductsController {
       // return res.status(200).json(products);
     } catch (error) {
       errorLog(error.message);
-      ctx.response.status = 404;
+      ctx.response.status = 500;
+      ctx.body = {
+        message: "Error en el servidor - read"
+      }
     }
   }
   
@@ -63,7 +66,7 @@ class ProductsController {
       const id = ctx.params?.id;
       const item = ctx.body;
       
-      const updatedProduct = await this.productsDao.updateProduct({ id, item });
+      const updatedProduct = await ProductsRepository.updateProduct({ id, item });
       if (updatedProduct) {
         ctx.response.status = 200;
         ctx.body = {
@@ -82,7 +85,7 @@ class ProductsController {
     try {
       const { id } = ctx.params;
 
-      const deletedProduct = await this.productsDao.deleteProduct(id);
+      const deletedProduct = await ProductsRepository.deleteProduct(id);
       if (deletedProduct) {
         ctx.response.status = 200;
         ctx.body = {

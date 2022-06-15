@@ -39,7 +39,7 @@ class ProductsRepository {
     }
   }
 
-  async getAllProducts({}) {
+  async getAllProducts() {
     try {
       const productosFromDB = await productosDao.getItem();
       const lista = [];

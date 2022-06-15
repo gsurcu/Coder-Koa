@@ -1,20 +1,19 @@
 const Koa = require('koa');
 const koaBody = require('koa-body');
+const { TIPO_PERSISTENCIA } = require('./src/config');
 
 const app = new Koa();
 
 app.use(koaBody());
 
-// let books = require('./books')
-let router = require('./src/routers/app.routers');
-
+let ApiRouter = require('./src/routers/api/api.routes');
+let router = new ApiRouter()
 app.use(router.start());
-// app.use(books.routes());
 
 const PORT = process.env.PORT || 8080;
 
 const server = app.listen(PORT, () => {
-  console.log(`Servidor Koa escuchando en el puerto ${server.address().port}`)
+  console.log(`Servidor Koa escuchando en el puerto ${server.address().port} - ${TIPO_PERSISTENCIA}`)
 })
 
 server.on('error', error => {

@@ -30,3 +30,33 @@
 {"level":"error","message":"{\"error\":\"[INTERNAL ERROR]\",\"message\":\"Unexpected end of JSON input\"}","timestamp":"2022-06-10T21:04:10.345Z"}
 {"level":"error","message":"{\"error\":\"[INTERNAL ERROR]\",\"message\":\"Unexpected end of JSON input\"}","timestamp":"2022-06-10T21:05:52.676Z"}
 {"level":"error","message":"{\"error\":\"[INTERNAL ERROR]\",\"message\":\"Unexpected end of JSON input\"}","timestamp":"2022-06-10T21:06:03.152Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'productsDao')","timestamp":"2022-06-15T17:06:47.724Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'productsDao')","timestamp":"2022-06-15T17:08:10.638Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'productsDao')","timestamp":"2022-06-15T17:10:26.165Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'productsDao')","timestamp":"2022-06-15T17:11:55.279Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'productsDao')","timestamp":"2022-06-15T17:12:14.211Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'productsDao')","timestamp":"2022-06-15T17:14:41.074Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'productsDao')","timestamp":"2022-06-15T17:16:48.275Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'productsDao')","timestamp":"2022-06-15T17:17:03.522Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'productsDao')","timestamp":"2022-06-15T17:17:59.867Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'productsDao')","timestamp":"2022-06-15T17:18:29.623Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'productsDao')","timestamp":"2022-06-15T17:20:09.809Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'productsDao')","timestamp":"2022-06-15T17:21:33.808Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'productsDao')","timestamp":"2022-06-15T17:22:05.070Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'productsDao')","timestamp":"2022-06-15T17:26:51.879Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'productsDao')","timestamp":"2022-06-15T17:29:47.618Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'productsDao')","timestamp":"2022-06-15T17:35:11.540Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'productsDao')","timestamp":"2022-06-15T17:54:10.021Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'productsDao')","timestamp":"2022-06-15T17:55:11.875Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'productsDao')","timestamp":"2022-06-15T17:55:19.024Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'productsDao')","timestamp":"2022-06-15T17:55:50.302Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'productsDao')","timestamp":"2022-06-15T17:56:24.014Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'productsDao')","timestamp":"2022-06-15T17:56:35.742Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'productsDao')","timestamp":"2022-06-15T17:57:29.683Z"}
+{"level":"error","message":"{\"error\":{\"tag\":\"[NOT FOUND]\",\"code\":404},\"message\":\"No se encontro el producto con id: undefined\"}","timestamp":"2022-06-15T17:59:40.818Z"}
+{"level":"error","message":"ProductsRepository.getAllProducts is not a function","timestamp":"2022-06-15T18:01:48.160Z"}
+{"level":"error","message":"ProductsRepository.getAllProducts is not a function","timestamp":"2022-06-15T18:02:38.004Z"}
+{"level":"error","message":"ProductsRepository.getAllProducts is not a function","timestamp":"2022-06-15T18:03:06.668Z"}
+{"level":"error","message":"ProductsRepository.getAllProducts is not a function","timestamp":"2022-06-15T18:03:08.076Z"}
+{"level":"error","message":"Cannot destructure 'undefined' as it is undefined.","timestamp":"2022-06-15T18:04:12.660Z"}
+{"level":"error","message":"Cannot destructure 'undefined' as it is undefined.","timestamp":"2022-06-15T18:04:14.003Z"}
